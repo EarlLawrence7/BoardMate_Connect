@@ -7,9 +7,9 @@
     tools:context=".SplashFragment">
 
     <LinearLayout
+        android:background="@color/primary"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/LightGreen"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -17,13 +17,13 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:src="@drawable/ic_chat"
-            app:tint="@color/DarkGreen" />
+            app:tint="@color/LightGreen" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="BoardMate Connect"
-            android:textColor="@color/black"
+            android:textColor="@color/Gray"
             android:textSize="30sp"
             android:textStyle="bold" />
 

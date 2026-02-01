@@ -3,40 +3,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SplashFragment">
 
     <LinearLayout
-        android:background="@color/LightGreen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/LightGreen"
         android:gravity="center"
         android:orientation="vertical">
 
         <ImageView
             android:layout_width="120dp"
             android:layout_height="120dp"
-
-            android:src="@drawable/ic_chat"/>
+            android:src="@drawable/ic_chat"
+            app:tint="@color/DarkGreen" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="BoardMate Connect"
+            android:textColor="@color/black"
             android:textSize="30sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:text="@string/get_connected_msg"
-            android:textSize="15sp"
-            android:textColor="@color/black"/>
-
+            android:textColor="@color/black"
+            android:textSize="17sp" />
 
 
     </LinearLayout>
-
 
 
 </RelativeLayout>

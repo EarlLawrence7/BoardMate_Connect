@@ -1,14 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LoginFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/screen"
+        android:gravity="center"
+        android:background="#D8FFE0"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
-</FrameLayout>
+        <ImageView
+            android:layout_width="550dp"
+            android:layout_height="279dp"
+            android:src="@mipmap/ic_launcher_foreground" />
+
+        <TextView
+            android:layout_marginTop="-60dp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="115dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's Get Boarding!"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You are Joining &quot;Earl's Boarding House&quot;"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginEnd="105dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Sign in to continue..."
+            android:textSize="17sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginHorizontal="17dp"
+            android:layout_marginVertical="17dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/black"
+            android:textColorHint="@color/black">>
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Username or Email"
+                android:textSize="17sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="17dp"
+            android:layout_marginVertical="17dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@android:color/black"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/black"
+            android:textColorHint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="17sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_marginEnd="115dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-17dp"
+            android:text="Forgot Password"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or Continue with google"
+            android:layout_marginTop="15dp"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="174dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/googledasdsa"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

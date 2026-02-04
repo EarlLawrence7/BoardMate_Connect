@@ -30,12 +30,15 @@
             android:textSize="15sp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="You are Joining &quot;Earl's Boarding House&quot;"
+            android:layout_marginHorizontal="25dp"
+            android:text="You are Joining &quot;John Doe's Boarding House&quot;"
             android:textColor="@color/black"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:breakStrategy="high_quality"
+            android:hyphenationFrequency="full" />
 
         <TextView
             android:layout_width="wrap_content"

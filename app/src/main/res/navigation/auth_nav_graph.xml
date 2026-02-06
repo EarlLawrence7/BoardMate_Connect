@@ -20,12 +20,29 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_codeFragment3"
-            app:destination="@id/codeFragment" />
+            android:id="@+id/action_loginFragment_to_roleSelectFragment"
+            app:destination="@id/roleSelectFragment" />
     </fragment>
     <fragment
         android:id="@+id/codeFragment"
         android:name="com.example.boardmateconnect.CodeFragment"
         android:label="fragment_code"
         tools:layout="@layout/fragment_code" />
+    <fragment
+        android:id="@+id/roleSelectFragment"
+        android:name="com.example.boardmateconnect.RoleSelectFragment"
+        android:label="fragment_role_select"
+        tools:layout="@layout/fragment_role_select" >
+        <action
+            android:id="@+id/action_roleSelectFragment_to_codeFragment"
+            app:destination="@id/codeFragment" />
+        <action
+            android:id="@+id/action_roleSelectFragment_to_createConnectFragment"
+            app:destination="@id/createConnectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createConnectFragment"
+        android:name="com.example.boardmateconnect.CreateConnectFragment"
+        android:label="fragment_create_connect"
+        tools:layout="@layout/fragment_create_connect" />
 </navigation>

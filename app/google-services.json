@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1037203138319",
+    "project_id": "boardmate-connect",
+    "storage_bucket": "boardmate-connect.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037203138319:android:f65bb8fd5b0dc4a31f807a",
+        "android_client_info": {
+          "package_name": "com.example.boardmateconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfJIid-ncABP9wthvP259qONSqLZE82_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".CreateConnectFragment">
 
+
     <LinearLayout
         android:id="@+id/screen"
         android:layout_width="match_parent"
@@ -34,16 +35,16 @@
             android:layout_marginTop="-4dp"
             android:src="@drawable/ic_bubble_tail" />
 
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:layout_marginRight="20dp"
-            android:text="Please input the unique code provided \nby your owner to join."
+            android:layout_marginRight="30dp"
+            android:text="Make your first Connection Group \nfor your Tenants"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="18sp" />
-
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -51,7 +52,7 @@
             android:layout_marginTop="40dp"
             android:layout_marginBottom="-15dp"
             android:layout_marginEnd="100dp"
-            android:text="Enter to continue.."
+            android:text="Create a Connect"
             android:textColor="@color/black"
             android:textSize="17sp"
             android:textStyle="normal" />
@@ -72,23 +73,23 @@
 
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_enterCode"
+                android:id="@+id/et_CreateConnect"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:drawableStart="@drawable/baseline_fiber_pin_24"
-                android:drawablePadding="14dp"
-                android:hint="Enter Code"
+                android:drawableStart="@drawable/ic_house"
+                android:drawablePadding="24dp"
+                android:hint="Name of Connect"
                 android:textColor="@color/black"
                 android:textSize="17sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_Enter"
+            android:id="@+id/btn_create"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginHorizontal="17dp"
             android:layout_marginTop="25dp"
-            android:text="Enter"
+            android:text="Create"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20sp"
